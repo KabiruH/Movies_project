@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, Routes, Route } from "react-router-dom";
-import Register from "./register";
-import Login from "./login";
+import Homepage from "./homepage";
 
 
 
@@ -13,15 +12,17 @@ function Navbar() {
     <div>
       <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-          <h1 className="title">Binge Movieflix</h1>
+          <Link class="btn btn-success"> <h1 className="title">Binge Movieflix</h1></Link>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
       </nav>
-      <Register />
-      <Login />
+      <Routes>
+        <Route path="/" element={<Homepage />}></Route>
+      </Routes>
+      <Homepage />
     </div>
   )
 }
