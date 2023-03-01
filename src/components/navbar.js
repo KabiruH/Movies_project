@@ -10,20 +10,18 @@ function Navbar() {
 
   return (
     <div>
-      <nav class="navbar bg-body-tertiary">
+      <nav class="navbar bg-dark">
         <div class="container-fluid">
-          <Link class="btn btn-success"> <h1 className="title">Binge Movieflix</h1></Link>
+          <Link to = "/">
+          <button class="btn btn-outline-success"> <h1 className="title">Binge Movieflix</h1></button></Link>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
       </nav>
-      <Routes>
-        <Route path="/" element={<Homepage />}></Route>
-      </Routes>
       <Homepage />
-    </div>
+     </div>
   )
 }
 

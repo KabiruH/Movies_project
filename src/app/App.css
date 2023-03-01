@@ -1,3 +1,20 @@
+body {
+  background-image: url(/src/images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg);
+  color: aliceblue;
+}
+
+.movies {
+  background-image: url(/src/images/pexels-pixabay-33129\ \(1\).jpg);
+  color: aliceblue;
+  text-align: center;
+  width: fit-content;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: row;
+  
+
+  
+}
 
 
 h1.title {

@@ -10,16 +10,16 @@ function Homepage() {
     return (
         <div >
             <div class="container-lg">
-                <p>Welcome to your home of movies, we got you, right after you sign in here</p>
-                <button class="btn btn-success mr-4">Register Here</button>
-                <button class="btn btn-success mr-4">Sign In Here</button>
+                <p className="fs-4">Welcome to your home of movies, we got you, right after you sign in ...</p>
+                <Link to="/register"><button class="btn btn-success">Register Here</button></Link> <br/>
+                <br/>
+                <Link to="/login"><button class="btn btn-success">Sign In Here</button></Link>
             </div>
 
             <Routes>
-                <Route path="/" element={<Homepage />}></Route>
-                <Route path="/login" element={<Login />}></Route>
-                <Route path="/register/*" element={<Register />}></Route>
-                <Route path="/moviesList" element={<MoviesList />}></Route>
+                <Route path="/login" element= {<Login/>}></Route>
+                <Route path="/register" element= {<Register/>}></Route>
+                <Route path="/moviesList" element= {<MoviesList/>}></Route>
             </Routes>
         </div>
     )
