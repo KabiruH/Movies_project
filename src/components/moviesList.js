@@ -4,12 +4,13 @@ import { Link } from "react-router-dom";
 function MoviesList () {
 
 return (
+    <div><Link to="/homepage"><button class="btn btn-success">Logout</button></Link>
    <div className="container movies">
-    <Link to="/homepage"><button class="btn btn-success">Logout</button></Link>
-   <p className="fs-4">Here's a list of movies we think you might be into!</p> 
+    
+   <span><p className="fs-4 text-white bg-danger">Grab your popcorn, get ready to binge!</p> </span>
+   </div>
    </div>
 )
-
 }
 
 export default MoviesList

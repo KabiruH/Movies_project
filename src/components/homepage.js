@@ -11,9 +11,7 @@ function Homepage() {
         <div >
             <div class="container-lg">
                 <p className="fs-4">Welcome to your home of movies, we got you, right after you sign in ...</p>
-                <Link to="/register"><button class="btn btn-success">Register Here</button></Link> <br/>
-                <br/>
-                <Link to="/login"><button class="btn btn-success">Sign In Here</button></Link>
+                
             </div>
 
             <Routes>

@@ -11,9 +11,6 @@ body {
   min-height: 80vh;
   display: flex;
   flex-direction: row;
-  
-
-  
 }
 
 
@@ -63,6 +60,12 @@ h1.title {
 .container-lg {
 
 text-align: center;
+}
+
+.container {
+  
+  transition: ease-in-out;
+  transition-delay: 1s;
 }
 
 
