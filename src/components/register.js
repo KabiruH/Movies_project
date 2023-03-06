@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
-
+    const navigate = useNavigate()
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -21,8 +21,8 @@ const Register = () => {
     })
     .then(response => response.json())
     .then(data => {
-        // console.log(data)
-        
+        console.log(data)
+        navigate("/login")
     })
     .catch(error => console.error(error))
     }
@@ -33,11 +33,11 @@ const Register = () => {
             <br/>
             <div class="mb-3 col-lg-6">
                 <label for="Name" class="form-label">Name</label>
-                <input type="text" value={name} onChange={(e) => setName(e.target.value)} class="form-control" required/>
+                <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="form-control" required/>
             </div>
             <div class="mb-3 col-lg-6">
                 <label for="Email" class="form-label">Email address</label>
-                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} class="form-control" required/>
+                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="form-control" required/>
                 <div id="emailHelp" class="fs-6">We'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3 col-lg-6">
@@ -45,8 +45,8 @@ const Register = () => {
                 <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} class="form-control" required/>
             </div>
 
-            <button type="submit" class="btn btn-success" onSubmit={e => handleAdd(e)}>Submit</button>
-            <Link to="/login"></Link>
+            <button type="submit" class="btn btn-success" onClick={e => handleAdd(e)}>Submit</button>
+            
         </form>
     )
 }

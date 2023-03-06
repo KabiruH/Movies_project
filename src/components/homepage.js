@@ -17,7 +17,7 @@ function Homepage() {
 
             <Routes>
                 <Route path="/login" element= {<Login/>}></Route>
-                <Route path="/addMovie" element= {<AddMovie/>}></Route>
+                <Route exact path="/addMovie" element= {<AddMovie/>}></Route>
                 <Route path="/register" element= {<Register/>}></Route>
                 <Route path="/moviesList" element= {<MoviesList/>}></Route>
             </Routes>

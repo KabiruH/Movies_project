@@ -71,8 +71,7 @@ text-align: center;
 .movie-card {
   display: grid;
   background: black;
-  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: 18rem;
   max-width: 315px;
   margin: 2em;
   border-radius: 10px;

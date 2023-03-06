@@ -6,7 +6,7 @@ import MovieCard from './movieCard';
 
 function MoviesList() {
     const [movies, setMovies] = useState([]);
-    
+
 
     // all movies
     useState(() => {
@@ -22,25 +22,27 @@ function MoviesList() {
 
     function handleDelete() { }
 
-    
 
-function update() { }
 
-return (
-    <div><Link to="/homepage"><button class="btn btn-success">Logout</button></Link>
-        <button class="btn btn-success" onChange={handleDelete}>Delete</button>
-        
-        <button class="btn btn-success" onChange={update}>Update</button>
-        <div className="container movies">
+    function update() { }
 
-            <ul > {movies.map(movie => <MovieCard title={movie.title}
-                MovieCard Releaseyear={movie.year}
-                Description={movie.description} />)} </ul>
+    return (
+        <div><Link to="/homepage"><button class="btn btn-success">Logout</button></Link>
+            <button class="btn btn-success" onChange={handleDelete}>Delete</button>
+
+            <button class="btn btn-success" onChange={update}>Update</button>
+            <div className="container movies">
+
+            <div>
+                <MovieCard movies={movies}/> <br/>
+              </div>
+
+
+
+            </div>
 
         </div>
-
-    </div>
-)
+    )
 }
 
 export default MoviesList
