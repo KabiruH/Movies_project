@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a movie webApp that fits the following deliverables:
 
-## Available Scripts
+      Create their own account
 
-In the project directory, you can run:
+      Login
 
-### `npm start`
+      View movies in the account
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+      Add their own movies
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+      Update the movies
 
-### `npm test`
+      Delete their added movies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The backend is deployed in https://movies-backend3.onrender.com/movies (the endpoint can be changed to view other users)
 
-### `npm run build`
+# Tools
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project was built with the following tools:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    React 2.7.0
+    
+# Running/testing the application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Running the application is very straight forward. 
 
-### `npm run eject`
+Create your account and view the movies while also being able to update and view the changes you make.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+which is also deployed here
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+     movies-project-omega.vercel.app
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Authors 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project was contributed to by:
 
-## Learn More
+Kabiru
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# License 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The project is licensed under Apache 2.0.
