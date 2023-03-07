@@ -11,7 +11,7 @@ function MoviesList() {
     // all movies
     useState(() => {
 
-        fetch("http://127.0.0.1:9292/movies")
+        fetch("https://movies-backend3.onrender.com/movies")
             .then(response => response.json())
             .then((data) => {
                 console.log(data);
@@ -33,7 +33,7 @@ function MoviesList() {
             <button class="btn btn-success" onChange={update}>Update</button>
             <div className="container movies">
 
-            <div>
+            <div className="movie-card">
                 <MovieCard movies={movies}/> <br/>
               </div>
 

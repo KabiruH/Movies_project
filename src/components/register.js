@@ -10,7 +10,7 @@ const Register = () => {
     function handleAdd(e) {
         e.preventDefault()
 
-    fetch('http://127.0.0.1:9292/auth/register', {
+    fetch('https://movies-backend3.onrender.com/auth/register', {
     method: 'POST',
     body: JSON.stringify({
         name: name,

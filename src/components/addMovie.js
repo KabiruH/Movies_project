@@ -16,7 +16,7 @@ function AddMovie(e) {
     function handleAdd(e) {
         e.preventDefault()
     
-    fetch('http://127.0.0.1:9292/create', {
+    fetch('https://movies-backend3.onrender.com/create', {
     method: 'POST',
     body: JSON.stringify({
         title: mov_title,
