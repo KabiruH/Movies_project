@@ -20,21 +20,19 @@ function MoviesList() {
 
     }, [])
 
-    function handleDelete() { }
+   
 
 
 
-    function update() { }
 
     return (
         <div><Link to="/homepage"><button class="btn btn-success">Logout</button></Link>
-            <button class="btn btn-success" onChange={handleDelete}>Delete</button>
-
-            <button class="btn btn-success" onChange={update}>Update</button>
+            
+            
             <div className="container movies">
 
             <div className="movie-card">
-                <MovieCard movies={movies}/> <br/>
+                <MovieCard movies={movies}/> 
               </div>
 
 

@@ -1,20 +1,35 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
-const MovieCard = ({ movies }) => {
+const MovieCard = ({ movies, handleDeleteMovie }) => {
+
+
+  function handleDelete(id) {
+    fetch(`https://movies-backend3.onrender.com/movies/destroy/${id}`, {
+      method: "DELETE",
+    })
+
+    handleDeleteMovie(id)
+  }
 
   return (
+    <div className="movie-info">
 
-
-    <div>
-
-      {movies.map((movie) =>
-        <div key={movie.id} >
-          <h2>{movie.title}</h2>
-          <p>{movie.description}</p>
-          <p>{movie.year}</p>
-        </div>
-      )}
-
+      
+        {movies.map((movie) =>
+          <div key={movie.id} >
+            <h2>{movie.title}</h2>
+            <p>{movie.description}</p>
+            <p>{movie.year}</p>
+            {movie.first_fetched === false && (
+              <button onClick={() => handleDelete(movie.id)}>Delete</button>
+            )}
+            {movie.first_fetched === false && (
+              <Link to={`/update/${movie.id}`}>Update</Link>
+            )}
+          </div>
+        )}
+      
     </div>
   );
 };
