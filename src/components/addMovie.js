@@ -43,6 +43,7 @@ function AddMovie(e) {
             <input type="number" placeholder="Enter year" value={mov_year} onChange={e => SetMov_year(e.target.value)} required></input> <br/>
             <label>Description</label> <br/>
             <input type="text" placeholder="Enter movie description" value={mov_description} onChange={e => SetMov_desc(e.target.value)} required></input> <br/>
+            <br/>
             <input type="submit" class="btn btn-success"></input>
             
         </form>
