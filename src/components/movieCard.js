@@ -29,7 +29,8 @@ const MovieCard = ({ movies, handleDeleteMovie }) => {
             )}
           </div>
         )}
-      
+                      <Link to="/addMovie"><button class="btn btn-success">Add Movies Here</button></Link>
+                <Link to="/update"><button class="btn btn-success">Update Movies Here</button></Link>
     </div>
   );
 };

@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Homepage from "./homepage";
 
-
-
-
-
 function Navbar({ onSearch }) {
 
   const navigate = useNavigate()
@@ -22,19 +18,41 @@ function Navbar({ onSearch }) {
 
   return (
     <div>
-      <nav class="navbar bg-dark">
-        <div class="container-fluid">
-          <Link to="/">
-            <button class="btn btn-outline-success"> <h1 className="title">Binge Movieflix</h1></button></Link>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" value={query} onChange={e => setQuery(e.target.value)} type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-success" type="submit" onClick={e => handleSearch(e)}>Search</button>
-          </form>
+
+      <div className="navbar bg-base-100">
+        <div className="flex-1">
+          <a className="btn btn-ghost normal-case text-xl">Binge Movies</a>
         </div>
-        <Link to="/register"><button class="btn btn-success">Register Here</button></Link> <br />
-        <br />
-        <Link to="/login"><button class="btn btn-success">Sign In Here</button></Link>
-      </nav>
+        <div className="flex-none gap-2">
+          <div className="form-control">
+            <input
+              value={query}
+              onChange={handleSearch}
+              type="search"
+              placeholder="Search"
+              className="input input-bordered w-24 md:w-auto" />
+
+          </div>
+          <div className="dropdown dropdown-end">
+            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+              <div className="w-10 rounded-full">
+                <img src="../images/pexels-pixabay-33129 (1).jpg" />
+              </div>
+            </label>
+            <ul tabIndex={0} className="mt-3 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+              <li>
+                <a className="justify-between">
+                  Profile
+                  <span className="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <Homepage />
     </div>
   )

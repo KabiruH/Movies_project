@@ -11,20 +11,24 @@ function Homepage() {
 
     return (
         <div >
-            <div class="container-lg">
-                <p className="fs-4">Welcome to your home of movies, we got you, right after you sign in ...</p>
-                <Link to="/addMovie"><button class="btn btn-success">Add Movies Here</button></Link>
-                <Link to="/update"><button class="btn btn-success">Update Movies Here</button></Link>
+            <div className="hero min-h-screen bg-neutral-900 ">
+                <div className="hero-content text-center">
+                    <div className="max-w-md">
+                        <h1 className="text-5xl font-bold">Hello there</h1>
+                        <p className="py-6">Immerse yourself in the magic of storytelling as you explore diverse genres and captivating narratives. From heartwarming dramas to pulse-pounding action flicks, we have something to captivate every movie lover's imagination.</p>
+                        <button className="btn btn-primary">Get Started</button>
+                    </div>
+                </div>
             </div>
-            
+
             <Routes>
-                <Route path="/login" element= {<Login/>}></Route>
-                <Route exact path="/addMovie" element= {<AddMovie/>}></Route>
-                <Route path="/update" element= {<Update/>}></Route>
-                <Route path="/register" element= {<Register/>}></Route>
-                <Route path="/moviesList" element= {<MoviesList/>}></Route>
+                <Route path="/login" element={<Login />}></Route>
+                <Route exact path="/addMovie" element={<AddMovie />}></Route>
+                <Route path="/update" element={<Update />}></Route>
+                <Route path="/register" element={<Register />}></Route>
+                <Route path="/moviesList" element={<MoviesList />}></Route>
             </Routes>
-            
+
         </div>
     )
 }
