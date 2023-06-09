@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Homepage from "./homepage";
+
 
 function Navbar({ onSearch }) {
 
@@ -21,7 +21,7 @@ function Navbar({ onSearch }) {
 
       <div className="navbar bg-base-100">
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl">Binge Movies</a>
+          <Link to="/" className="btn btn-ghost normal-case text-xl">Binge Movies</Link>
         </div>
         <div className="flex-none gap-2">
           <div className="form-control">
@@ -36,7 +36,7 @@ function Navbar({ onSearch }) {
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
-                <img src="../images/pexels-pixabay-33129 (1).jpg" />
+                <img src="https://images.unsplash.com/photo-1566275542449-55f97f787d15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" />
               </div>
             </label>
             <ul tabIndex={0} className="mt-3 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
@@ -53,7 +53,7 @@ function Navbar({ onSearch }) {
         </div>
       </div>
 
-      <Homepage />
+      
     </div>
   )
 }

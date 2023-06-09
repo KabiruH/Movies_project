@@ -26,7 +26,7 @@ function MoviesList() {
 
 
     return (
-        <div><Link to="/homepage"><button class="btn btn-success">Logout</button></Link>
+        <div>
             
             
             <div className="container movies">

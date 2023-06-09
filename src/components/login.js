@@ -31,20 +31,36 @@ const Login = () => {
 
 
   return (
-    <form class="container" onSubmit={e => handleSubmit(e)}>
-      <h2>Login Here</h2>
-      <div class="mb-3 col-lg-6">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required />
 
+    <form className="hero min-h-screen bg-base-200" onSubmit={e => handleSubmit(e)}>
+      <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className="text-center lg:text-left">
+          <h1 className="text-5xl font-bold">Login now!</h1>
+          <p className="py-6">Rediscover your favorite films, catch up on the latest releases, and explore new genres that cater to your unique tastes. Whether you're looking for action-packed blockbusters, heartwarming dramas, or thought-provoking documentaries, our login page is your ticket to a seamless and immersive movie-watching journey. </p>
+        </div>
+        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <div className="card-body">
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Email</span>
+              </label>
+              <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email" className="input input-bordered" />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Password</span>
+              </label>
+              <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="password" className="input input-bordered" />
+              <label className="label">
+                <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+              </label>
+            </div>
+            <div className="form-control mt-6">
+              <button className="btn btn-primary">Login</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="mb-3 col-lg-6">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} class="form-control" id="exampleInputPassword1" required />
-      </div>
-
-      <input type="submit" class="btn btn-success" />
-
     </form>
   )
 }
