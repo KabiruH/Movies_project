@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const Login = () => {
 
@@ -32,11 +33,12 @@ const Login = () => {
 
   return (
 
-    <form className="hero min-h-screen bg-base-200" onSubmit={e => handleSubmit(e)}>
+    <form className="hero min-h-screen pr-40 bg-[url(https://images.hdqwalls.com/download/john-wick-chapter-4-minimal-5k-6n-1920x1080.jpg)]" 
+    onSubmit={e => handleSubmit(e)}>
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Login now!</h1>
-          <p className="py-6">Rediscover your favorite films, catch up on the latest releases, and explore new genres that cater to your unique tastes. Whether you're looking for action-packed blockbusters, heartwarming dramas, or thought-provoking documentaries, our login page is your ticket to a seamless and immersive movie-watching journey. </p>
+          <h1 className="text-5xl font-bold rounded-xl text-center text-blue-400 ">Login now!</h1>
+          <p className="py-6 bg-black rounded-xl text-center text-xl">Rediscover your favorite films, catch up on the latest releases, and explore new genres that cater to your unique tastes. Whether you're looking for action-packed blockbusters, heartwarming dramas, or thought-provoking documentaries, our login page is your ticket to a seamless and immersive movie-watching journey. </p>
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <div className="card-body">
@@ -52,7 +54,10 @@ const Login = () => {
               </label>
               <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="password" className="input input-bordered" />
               <label className="label">
-                <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                <a href="#" className="label-text-alt text-base link link-hover">Forgot password?</a>
+              </label>
+              <label className="label"> No account? 
+                <Link to="/register" className="label-text-alt text-base link link-hover">Register Here</Link>
               </label>
             </div>
             <div className="form-control mt-6">

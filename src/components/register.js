@@ -30,11 +30,11 @@ const Register = () => {
 
     return (
 
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen pr-40 bg-[url(https://images.hdqwalls.com/download/cillian-murphy-in-oppenheimer-2023-5k-8o-1920x1080.jpg)]">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="text-center lg:text-left">
-                    <h1 className="text-5xl font-bold">Register Here!</h1>
-                    <p className="py-6"> Our register page provides you with the opportunity to unlock a world of captivating films, thrilling genres, and unforgettable performances. Join our vibrant community of movie enthusiasts, where you can discover, review, and share your favorite films with fellow cinephiles. </p>
+                    <h1 className="text-5xl font-bold text-center">Register Here!</h1>
+                    <p className="py-6 bg-black text-center rounded-xl"> Our register page provides you with the opportunity to unlock a world of captivating films, thrilling genres, and unforgettable performances. Join our vibrant community of movie enthusiasts, where you can discover, review, and share your favorite films with fellow cinephiles. </p>
                 </div>
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                     <div className="card-body">
@@ -58,10 +58,10 @@ const Register = () => {
                             </label>
                             <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" className="input input-bordered" />
                             <label className="label">
-                                <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                                <a href="#" className="label-text-alt text-base link-hover">Forgot password?</a>
                             </label>
                             <label className="label">
-                                <Link to="/login" className="label-text-alt link link-hover">Login Here</Link>
+                                <Link to="/login" className="label-text-alt text-base link link-hover">Login Here</Link>
                             </label>
                         </div>
                         <div className="form-control mt-6">
