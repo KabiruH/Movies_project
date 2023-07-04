@@ -6,7 +6,7 @@ function Homepage() {
 
     return (
         <div >
-            <div className="hero min-h-screen pr-40 bg-[url(https://images.hdqwalls.com/download/avatar-the-way-of-water-movie-4k-mi-1920x1080.jpg)]">
+            <div className="hero min-h-screen pr-40 bg-[url(https://images.hdqwalls.com/download/avatar-the-way-of-water-movie-4k-mi-1920x1080.jpg)] ">
             
                 <div className="hero-content text-center">
                     <div className="max-w-md bg-black rounded-lg opacity-80">
