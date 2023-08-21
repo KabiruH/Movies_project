@@ -43,7 +43,7 @@ function Navbar({ onSearch }) {
               <li>
                 <a className="justify-between">
                   Profile
-                  <span className="badge">New</span>
+                  <span>new</span>
                 </a>
               </li>
               <li><a>Settings</a></li>
